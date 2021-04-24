@@ -51,7 +51,6 @@ public class Main {
         System.out.println("Percentual de votos Nulos: " + calculo + "%");
         calculo = (100*votosValidos)/totalEleitores;
         System.out.println("Percentual de votos Validos: " + calculo + "%");
-        */
 
         //escreva um algoritmo que leia o salário atual de um funcionário e o percentual de ajuste
         //calcule e escreva o valor do novo salário
@@ -62,6 +61,21 @@ public class Main {
         double percentualAjuste = inputD.nextDouble();
         double novoSalario = salario + (salario * (percentualAjuste/100));
         System.out.println("O seu novo salário ajustado é: " + novoSalario);
+         */
+
+        //escreva um algoritmo que leia o custo de fabrica de um carro
+        //e calcule o custo final ao consumidor
+        Scanner inputE = new Scanner(System.in);
+        float custoFabrica;
+        System.out.println("Informe o custo de fábrica do carro: ");
+        custoFabrica = inputE.nextFloat();
+        float percentDistribuidor, percentImpostos;
+        System.out.println("Informe o % do Distribuidor e dos Impostos no formato X% Y%: ");
+        percentDistribuidor = inputE.nextFloat();
+        percentImpostos = inputE.nextFloat();
+        float custoFinal = custoFabrica + (custoFabrica*(percentDistribuidor/100)) + (custoFabrica*(percentImpostos/100));
+        System.out.println("Custo final ao consumidor é: " + custoFinal);
+
 
 
 
