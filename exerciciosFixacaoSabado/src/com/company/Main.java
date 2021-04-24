@@ -32,7 +32,7 @@ public class Main {
         int dias = inputB.nextInt();
         int idadeEmDias = 365*anos + 30*meses + dias;
         System.out.println("Sua idade em dias é: " + idadeEmDias);
-        */
+
         //escreva um algoritmo para ler o numero total de eleitores de um municipio
         //o numero de votos brancos, nulos e validos
         //calcular o percentual de votos em relacao ao total
@@ -51,6 +51,17 @@ public class Main {
         System.out.println("Percentual de votos Nulos: " + calculo + "%");
         calculo = (100*votosValidos)/totalEleitores;
         System.out.println("Percentual de votos Validos: " + calculo + "%");
+        */
+
+        //escreva um algoritmo que leia o salário atual de um funcionário e o percentual de ajuste
+        //calcule e escreva o valor do novo salário
+        Scanner inputD = new Scanner(System.in);
+        System.out.println("Informe o seu salário atual: ");
+        double salario = inputD.nextDouble();
+        System.out.println("Informe o percentual de ajuste em X%: ");
+        double percentualAjuste = inputD.nextDouble();
+        double novoSalario = salario + (salario * (percentualAjuste/100));
+        System.out.println("O seu novo salário ajustado é: " + novoSalario);
 
 
 
