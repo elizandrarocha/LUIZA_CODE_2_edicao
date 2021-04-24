@@ -61,7 +61,6 @@ public class Main {
         double percentualAjuste = inputD.nextDouble();
         double novoSalario = salario + (salario * (percentualAjuste/100));
         System.out.println("O seu novo salário ajustado é: " + novoSalario);
-         */
 
         //escreva um algoritmo que leia o custo de fabrica de um carro
         //e calcule o custo final ao consumidor
@@ -75,6 +74,24 @@ public class Main {
         percentImpostos = inputE.nextFloat();
         float custoFinal = custoFabrica + (custoFabrica*(percentDistribuidor/100)) + (custoFabrica*(percentImpostos/100));
         System.out.println("Custo final ao consumidor é: " + custoFinal);
+
+         */
+        //escreva um algoritmo que leia a qtd de carros vendidos e
+        //o valor total de vendas, o salário fixo, e valor recebido por carro vendido
+        //imprimir salario final do funcionário
+        int  qtdVendidos;
+        double totValorVendas, valorCarroVend, salarioFixo, salarioFinal;
+        Scanner leia = new Scanner(System.in);
+        System.out.println("Quantos carros você vendeu no mês? ");
+        qtdVendidos = leia.nextInt();
+        System.out.println("Qual foi o valor total de suas vendas em R$: ");
+        totValorVendas = leia.nextDouble();
+        System.out.println("Qual é o seu salário fixo em R$: ");
+        salarioFixo = leia.nextDouble();
+        System.out.println("Quanto você recebe por carro vendido? ");
+        valorCarroVend = leia.nextDouble();
+        salarioFinal = salarioFixo + (valorCarroVend*qtdVendidos) + (0.05 * totValorVendas);
+        System.out.println("Seu salário final é: R$ " + salarioFinal);
 
 
 
